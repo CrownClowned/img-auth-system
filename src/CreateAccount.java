@@ -401,7 +401,7 @@ public class CreateAccount extends javax.swing.JFrame {
             p = t7.getText();
             a = Integer.parseInt(t3.getText());
             Class.forName("java.sql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","amolikamehta@2004");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","password");
             Statement s = con.createStatement();
             PreparedStatement st;
             String sql;
