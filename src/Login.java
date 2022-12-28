@@ -238,7 +238,7 @@ public class Login extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this,"Empty Username or Password.","Login Error",JOptionPane.ERROR_MESSAGE);
             }
             else{
-                st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","amolikamehta@2004").prepareStatement(query);
+                st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","password").prepareStatement(query);
                 st.setString(1, r);
                 st.setString(2, n);
                 rs = st.executeQuery();
