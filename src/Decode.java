@@ -126,7 +126,7 @@ public class Decode extends javax.swing.JFrame {
         try{
             String query = "select imgname,certificate,d_signature,uname from imgtable where imgName = ? and uname = ?";
             PreparedStatement st;
-            st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","amolikamehta@2004").prepareStatement(query);
+            st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","password").prepareStatement(query);
             String uname = name;
             st.setString(1,iname);
             st.setString(2, uname);
