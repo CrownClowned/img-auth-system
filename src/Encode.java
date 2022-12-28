@@ -347,7 +347,7 @@ public class Encode extends javax.swing.JFrame {
             String wh = String.valueOf(iWatermarkingHash);
             System.out.println(iWatermarkingHash);
             Class.forName("java.sql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","amolikamehta@2004");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","password");
             Statement s= con.createStatement();
             String r = t1.getText();
             String n = t3.getText();
