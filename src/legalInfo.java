@@ -294,7 +294,7 @@ public class legalInfo extends javax.swing.JFrame {
             PreparedStatement st;
             String sql = "SELECT * from imgtable,perauth where perauth.uname = imgtable.uname and imgtable.imgName = ? and perauth.uname = ?";
             //sql = "Insert into perauth values('"+(r)+"','"+(n)+"',"+(a)+",'"+(g)+"','"+(u)+"','"+(p)+"','"+(ql)+"')";
-            st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","amolikamehta@2004").prepareStatement(sql);
+            st = DriverManager.getConnection("jdbc:mysql://localhost:3306/imgAuth","root","password").prepareStatement(sql);
             st.setString(1, in);
             st.setString(2, un);
             ResultSet rs = st.executeQuery();
